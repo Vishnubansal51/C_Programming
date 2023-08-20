@@ -1,0 +1,27 @@
+#include<iostream>
+using namespace std;
+
+class outer
+{
+    public:
+    void fun()
+    {
+        i.display();
+    }
+    class inner
+    {
+        public:
+
+        void display()
+        {
+            cout<<"display of timer"<<endl;
+        }
+    };
+    inner i;
+};
+
+int main()
+{
+    outer::inner i;
+    
+}
